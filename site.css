@@ -58,8 +58,8 @@
         flex-wrap: wrap;
         margin: auto;
     }
-    .g-4, .gx-4 {
-        --bs-gutter-x: 1.5rem;
+    .col {
+        margin: 20px;
     }
 
 /*FOOTER styling*/
