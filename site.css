@@ -5,6 +5,10 @@
     Description: CSS Styling for Personal Portfolio
 */
 
+*, 
+    box-sizing: border-box;
+}
+
 .nav {
     display: grid;
     grid-template-columns: 1fr repeat(7, fit-content(136px));
