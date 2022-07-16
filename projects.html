@@ -1,203 +1,74 @@
-<!--Title: index.html
-Author: Kailee Stephens
-Date: 07/12/2022
-Description: HTML for Personal Portfolio Projects Page
--->
+/** 
+    Title: site.css
+    Author: Kailee Stephens
+    Date: 07/12/2022
+    Description: CSS Styling for Personal Portfolio
+*/
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>WEB 330 - Personal Portfolio</title>
-    <!-- external CSS stylesheet -->
-    <link rel="stylesheet" href="site.css" />
+.nav {
+    display: grid;
+    grid-template-columns: 1fr repeat(7, fit-content(136px));
+    justify-content: end;
+    justify-items: center;
+    gap: 24px;
+    background-color: #ee766d;
+    padding: 24px;
+    text-decoration:none;
+}
+.nav-item, .nav-item-name {
+    color: #ffffff;
+}
+.nav-item-name {
+    grid-column: 1/2;
 
-    <!-- Google fonts for Oswald -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <nav class="nav-div">
-    <div class="listNavbar">
-      <ul class="nav">
-        <li class="nav-item-name">Kailee Stephens</li>
-        <li class="nav-item">
-          <a class="navLink" href="./index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="navLink" href="./projects.html">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="navLink" href="./database-diagrams.html">Database Diagrams</a>
-        </li>
-        <li class="nav-item">
-          <a class="navLink" href="./API-unit-tests.html">API Unit Tests</a>
-        </li>
-        <li class="nav-item">
-          <a class="navLink" href="./resume.html">Resume</a>
-        </li>
-        <li class="nav-item">
-          <a class="navLink" href="./about.html">About</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+}
 
 
-  <body>
-      <div class="container">
-        <h1 class="headerProjects">Shool Projects</h1>
-      <!-- begin first row -->
-      <div class="card-content">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
-            <!-- card -->
-            <div class="card border-success mb-3" style="max-width: 18rem">
-              <div class="card-header bg-transparent border-success">
-                WEB 231 Landing Page
-              </div>
-              <!-- begin small card -->
-              <div class="card" style="max-width: 18rem">
-                <a href="https://placeholder.jp"><img src="https://placehold.jp/285x200.png" alt=""></a>
-              </div>
-              <!-- end small card -->
-              <div class="card-footer bg-transparent border-success">
-                Short description
-              </div>
-            </div>
-          </div>
+/*Projects styling*/
+.card-content{
+    margin-top:50px;
+    
+    }
+    
+    .headerProjects{
+        text-align: center;
+        margin-top:25px;
+       
+    }
+    
+    .headerResume{
+        text-align: center;
+        margin-top:25px;
+        display: inline-flex;
+    }
+    
+    .card-header{
+      text-align: center;
+    
+    }
+    
+    .card-footer{
+    text-align: center;
+    
+    }
+    .row {
 
-          <div class="col">
-            <!-- card -->
-            <div class="card border-success mb-3" style="max-width: 18rem">
-              <div class="card-header bg-transparent border-success">
-                WEB 330 Landing Page
-              </div>
-              <!-- begin small card -->
-              <div class="card" style="max-width: 18rem">
-                <a href=""><img src="https://placehold.jp/285x200.png" alt=""></a>
-              </div>
-              <!-- end small card -->
-              <div class="card-footer bg-transparent border-success">
-                Short description
-              </div>
-            </div>
-            </div>
-                <!-- end first row -->
-                <!-- begin second row -->
-            <div class="col">
-              <!-- card -->
-              <div class="card border-success mb-3" style="max-width: 18rem">
-                <div class="card-header bg-transparent border-success">
-                  WEB 420’s Capstone Project
-                </div>
-                <!-- begin small card -->
-                <div class="card" style="max-width: 18rem">
-                  <a href=""><img src="https://placehold.jp/285x200.png" alt=""></a>
-                </div>
-                <!-- end small card -->
-                <div class="card-footer bg-transparent border-success">
-                  Short description
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-    <!-- end first row -->
-    <!-- begin second row -->
-    <div class="card-content">
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <!-- card -->
-          <div class="card border-success mb-3" style="max-width: 18rem">
-            <div class="card-header bg-transparent border-success">Composer App</div>
-            <!-- begin small card -->
-            <div class="card" style="max-width: 18rem">
-              <a href=""><img src="https://placehold.jp/285x200.png" alt=""></a>
-            </div>
-            <!-- end small card -->
-            <div class="card-footer bg-transparent border-success">Short description</div>
-          </div>
-        </div>
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: calc(-1 * var(--bs-gutter-y));
+        margin-right: calc(-.5 * var(--bs-gutter-x));
+        margin-left: calc(-.5 * var(--bs-gutter-x));
+    }
 
-        <div class="col">
-          <!-- card -->
-          <div class="card border-success mb-3" style="max-width: 18rem">
-            <div class="card-header bg-transparent border-success">GPA Calculator App</div>
-            <!-- begin small card -->
-            <div class="card" style="max-width: 18rem">
-              <a href=""><img src="https://placehold.jp/285x200.png" alt=""></a>
-            </div>
-            <!-- end small card -->
-            <div class="card-footer bg-transparent border-success">Short description</div>
-          </div>
-        </div>
-
-        <div class="col">
-          <!-- card -->
-          <div class="card border-success mb-3" style="max-width: 18rem">
-            <div class="card-header bg-transparent border-success">In-N-Out-Books</div>
-            <!-- begin small card -->
-            <div class="card" style="max-width: 18rem">
-              <a href=""><img src="https://placehold.jp/285x200.png" alt=""></a>
-            </div>
-            <!-- end small card -->
-            <div class="card-footer bg-transparent border-success">Short description</div>
-          </div>
-        </div>
-      </div>
-    </div> 
-      <!-- end second row -->
-    <!-- begin third row begin -->
-    <div class="card-content">
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <!-- card -->
-          <div class="card border-success mb-3" style="max-width: 18rem">
-            <div class="card-header bg-transparent border-success">Nodebucket</div>
-            <!-- begin small card -->
-            <div class="card" style="max-width: 18rem">
-              <a href=""><img src="https://placehold.jp/285x200.png" alt=""></a>
-            </div>
-            <!-- end small card -->
-            <div class="card-footer bg-transparent border-success">Short description</div>
-          </div>
-        </div>
-
-        <div class="col">
-          <!-- card -->
-          <div class="card border-success mb-3" style="max-width: 18rem">
-            <div class="card-header bg-transparent border-success">Bob’s Computer Repair Shop</div>
-            <!-- begin small card -->
-            <div class="card" style="max-width: 18rem">
-              <a href=""><img src="https://placehold.jp/285x200.png" alt=""></a>
-            </div>
-            <!-- end small card -->
-            <div class="card-footer bg-transparent border-success">Short description</div>
-          </div>
-        </div>
-
-        <div class="col">
-          <!-- card -->
-          <div class="card border-success mb-3" style="max-width: 18rem">
-            <div class="card-header bg-transparent border-success">Header</div>
-            <!-- begin small card -->
-            <div class="card" style="max-width: 18rem">
-              <a href=""><img src="https://placehold.jp/285x200.png" alt=""></a>
-            </div>
-            <!-- end small card -->
-            <div class="card-footer bg-transparent border-success">Short description</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  </body>
-  <footer>
-    <a href="" target="_blank">My GitHub Repo</a>
-    <a href="https://www.bellevue.edu/degrees/bachelor/web-development-bs/" target="_blank">Bellevue Web Development Degree</a>
-    <a href="https://www.youtube.com/user/bellevueuniversity" target="_blank">Bellevue University Youtube</a>
-    <a href="https://github.com/buwebdev" target="_blank">Bellevue University GitHub</a>
-</footer>
-</html>
+/*FOOTER styling*/
+footer {
+    background-color: #ee766d;
+    display: grid;
+    grid-template-columns: repeat(4, fit-content(250px));
+    justify-content: center;
+    justify-items: baseline;
+    gap: 24px;
+    padding-top: 143px;
+    padding-bottom: 39px;
+  }
