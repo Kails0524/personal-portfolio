@@ -5,7 +5,6 @@
     Description: CSS Styling for Personal Portfolio
 */
 
-
 .nav {
     display: grid;
     grid-template-columns: 1fr repeat(7, fit-content(136px));
@@ -24,6 +23,25 @@
 
 }
 
+/* Index.html styiling*/
+section.main {
+    background: none;
+    border: none;
+    border-bottom: #dddddd solid 1px;
+    overflow: hidden;
+    border-top: #ffffff solid 1px;
+    padding: 6.4rem 3.2rem;
+}
+
+.row, .content .row {
+    clear: both;
+    max-width: 1040px;
+    margin: 0 auto;
+}
+
+.text-main, .text-middle {
+    padding-top: 3.2rem;
+}
 
 /*Projects styling*/
 .card-content{
