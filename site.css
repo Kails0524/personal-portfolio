@@ -1,0 +1,64 @@
+/** 
+    Title: site.css
+    Author: Kailee Stephens
+    Date: 07/12/2022
+    Description: CSS Styling for Personal Portfolio
+*/
+
+.nav {
+    display: grid;
+    grid-template-columns: 1fr repeat(7, fit-content(136px));
+    justify-content: end;
+    justify-items: center;
+    gap: 24px;
+    background-color: #ee766d;
+    padding: 24px;
+}
+.nav-item, .nav-item-name {
+    color: #ffffff;
+}
+.nav-item-name {
+    grid-column: 1/2;
+
+}
+
+
+/*Projects styling*/
+.card-content{
+    margin-top:50px;
+    
+    }
+    
+    .headerProjects{
+        text-align: center;
+        margin-top:25px;
+       
+    }
+    
+    .headerResume{
+        text-align: center;
+        margin-top:25px;
+        display: inline-flex;
+    }
+    
+    .card-header{
+      text-align: center;
+    
+    }
+    
+    .card-footer{
+    text-align: center;
+    
+    }
+
+/*FOOTER styling*/
+footer {
+    background-color: #ee766d;
+    display: grid;
+    grid-template-columns: repeat(4, fit-content(250px));
+    justify-content: center;
+    justify-items: baseline;
+    gap: 24px;
+    padding-top: 143px;
+    padding-bottom: 39px;
+  }
