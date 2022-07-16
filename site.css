@@ -85,21 +85,17 @@ section.main {
 
 
 /* Resume Styling*/
-.column-resume {
+.column-edu, .column-exp {
     float: left;
     width: 50%;
     }
 
-    .row-edu:after {
+.row-resume:after {
     content: "";
     display: table;
     clear: both;
-    }
-    .row-exp:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
+}
+
 /*FOOTER styling*/
 footer {
     background-color: #ee766d;
