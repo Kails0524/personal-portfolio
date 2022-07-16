@@ -4,7 +4,9 @@
     Date: 07/12/2022
     Description: CSS Styling for Personal Portfolio
 */
-
+*    {
+    box-sizing: border-box;
+}
 .nav {
     display: grid;
     grid-template-columns: 1fr repeat(7, fit-content(136px));
@@ -23,7 +25,7 @@
 
 }
 
-/* Index.html styiling*/
+/* Index.html styling*/
 section.main {
     background: none;
     border: none;
@@ -81,6 +83,23 @@ section.main {
         margin-left: auto;
     }
 
+
+/* Resume Styling*/
+.column-resume {
+    float: left;
+    width: 50%;
+    }
+
+    .row-edu:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    .row-exp:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 /*FOOTER styling*/
 footer {
     background-color: #ee766d;
