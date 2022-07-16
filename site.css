@@ -78,7 +78,7 @@ section.main {
     }
     .col {
         margin: 20px;
-        margin-left: 10%;
+        margin-left: auto;
     }
 
 /*FOOTER styling*/
