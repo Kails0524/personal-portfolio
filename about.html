@@ -21,66 +21,110 @@ Description: HTML for Personal Portfolio About Page
   <body>
     <nav class="nav-div">
       <div class="listNavbar">
-        <ul class="nav">
-          <li class="nav-item-name">Kailee Stephens</li>
+        <ul class="nav" style="list-style: none;">
+          <li class="nav-item-name" style="font-size:40px">Kailee Stephens</li>
           <li class="nav-item">
-            <a class="navLink" href="./index.html">Home</a>
+            <a class="navLink" style="text-decoration:none; color:inherit;" href="./index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="navLink" href="./projects.html">Projects</a>
+            <a class="navLink" style="text-decoration:none; color:inherit;"href="./projects.html">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="navLink" href="./database-diagrams.html">Database Diagrams</a>
+            <a class="navLink" style="text-decoration:none; color:inherit;"href="./database-diagrams.html">Database Diagrams</a>
           </li>
           <li class="nav-item">
-            <a class="navLink" href="./API-unit-tests.html">API Unit Tests</a>
+            <a class="navLink" style="text-decoration:none; color:inherit;"href="./API-unit-tests.html">API Unit Tests</a>
           </li>
           <li class="nav-item">
-            <a class="navLink" href="./resume.html">Resume</a>
+            <a class="navLink" style="text-decoration:none; color:inherit;"href="./resume.html">Resume</a>
           </li>
           <li class="nav-item">
-            <a class="navLink" href="./about.html">About</a>
+            <a class="navLink" style="text-decoration:none; color:inherit;"href="./about.html">About</a>
           </li>
         </ul>
       </div>
     </nav>
   <body>
+
     <section>
-      <div class="card-about">
-        <div class="about-content">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-6">
-                <h3>Column 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-              </div>
-              <div class="col-sm-6">
-                <h3>Column 2</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-4">
-                <h3>Column 1</h3>
-                  <p>another image </p>
-              </div>
-              <div class="col-sm-8">
-                <h3>Column 2</h3>
-                  <p>another image</p>
-              </div> 
-            </div>
-          </div>        
-  
-        </div>
-      </div>
+
+<div class="row">
+  <div class="column" style="background-color:#fff;">
+    <h2 style="text-align: center;">About </h2>
+    <p style="text-align: center;">My name is Kailee Stephens. I am currently a student at Bellevue University, studying to 
+receive my degree in Web Development. After college, I hope to continue to grow in the 
+Web Development field. Growing up, my dad always worked in IT and e-commerce. 
+Following in his footsteps I have decided to pursue a similar path as I have found it to be 
+a great outlet for my natural creativity. In my spare time, I also enjoy reading, crocheting and traveling.</p>
+  </div>
+  <div class="column" style="background-color:#fff;">
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+ 
+  <img src="hike.jpeg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+
+  <img src="ocean.jpeg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+
+  <img src="bunny.JPG" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+  </div>
+</div>
     </section>
   </body>
   <footer>
-    <a href="" target="_blank">My GitHub Repo</a>
-    <a href="https://www.bellevue.edu/degrees/bachelor/web-development-bs/" target="_blank">Bellevue Web Development Degree</a>
-    <a href="https://www.youtube.com/user/bellevueuniversity" target="_blank">Bellevue University Youtube</a>
-    <a href="https://github.com/buwebdev" target="_blank">Bellevue University GitHub</a>
+    <a style="text-decoration:none; color:inherit;" href="https://github.com/Kails0524/personal-portfolio" target="_blank">My GitHub Repo</a>
+    <a style="text-decoration:none; color:inherit;" href="https://www.bellevue.edu/degrees/bachelor/web-development-bs/" target="_blank">Bellevue Web Development Degree</a>
+    <a style="text-decoration:none; color:inherit;" href="https://www.youtube.com/user/bellevueuniversity" target="_blank">Bellevue University Youtube</a>
+    <a style="text-decoration:none; color:inherit;" href="https://github.com/buwebdev" target="_blank">Bellevue University GitHub</a>
 </footer>
 </html>
