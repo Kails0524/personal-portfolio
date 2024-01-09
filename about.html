@@ -52,77 +52,75 @@ Resources: https://www.w3schools.com/howto/howto_js_slideshow.asp
 
     <section>
 
-<div class="row">
-  <div class="column" style="background-color:#fff;">
-    <h2 style="text-align: center;">About </h2>
-    <p style="text-align: center;">My name is Kailee Stephens. I am currently a student at Bellevue University, studying to 
-receive my degree in Web Development. After college, I hope to continue to grow in the 
-Web Development field. Growing up, my dad always worked in IT and e-commerce. 
-Following in his footsteps I have decided to pursue a similar path as I have found it to be 
-a great outlet for my natural creativity. In my spare time, I also enjoy reading, crocheting and traveling.</p>
-  </div>
-  <div class="column" style="background-color:#fff;">
-<div class="slideshow-container">
+      <div class="row">
+        <div class="column" style="background-color:#fff;">
+          <h2 style="text-align: center;">About </h2>
+          <p style="text-align: center;">My name is Kailee Stephens. I am currently a student at Bellevue University, studying to 
+            receive my degree in Web Development. After college, I hope to continue to grow in the 
+            Web Development field. Growing up, my dad always worked in IT and e-commerce. 
+            Following in his footsteps I have decided to pursue a similar path as I have found it to be 
+            a great outlet for my natural creativity. In my spare time, I also enjoy reading, crocheting and traveling.
+          </p>
+        </div>
+        <div class="column" style="background-color:#fff;">
+          <div class="slideshow-container">
 
-<div class="mySlides fade">
- 
-  <img src="./public/images/hike.jpeg" style="width:100%">
-</div>
+          <div class="mySlides fade">
+          
+            <img src="./public/images/hike.jpeg" style="width:100%">
+          </div>
 
-<div class="mySlides fade">
+          <div class="mySlides fade">
 
-  <img src="./public/images/ocean.jpeg" style="width:100%">
-</div>
+            <img src="./public/images/ocean.jpeg" style="width:100%">
+          </div>
 
-<div class="mySlides fade">
+          <div class="mySlides fade">
 
-  <img src="./public/images/bunny.JPG" style="width:100%">
-</div>
+            <img src="./public/images/bunny.JPG" style="width:100%">
+          </div>
 
-<a class="prev" onclick="plusSlides(-1)">❮</a>
-<a class="next" onclick="plusSlides(1)">❯</a>
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
 
-</div>
-<br>
+        </div>
+        <br>
 
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
 
-<script>
-let slideIndex = 1;
-showSlides(slideIndex);
+        <script>
+          let slideIndex = 1;
+          showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>
-
-
-  </div>
-</div>
+          function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+          }
+        </script>
+      </div>
     </section>
   </body>
   <footer>
@@ -130,5 +128,5 @@ function showSlides(n) {
     <a style="text-decoration:none; color:inherit;" href="https://www.bellevue.edu/degrees/bachelor/web-development-bs/" target="_blank">Bellevue Web Development Degree</a>
     <a style="text-decoration:none; color:inherit;" href="https://www.youtube.com/user/bellevueuniversity" target="_blank">Bellevue University Youtube</a>
     <a style="text-decoration:none; color:inherit;" href="https://github.com/buwebdev" target="_blank">Bellevue University GitHub</a>
-</footer>
+  </footer>
 </html>
